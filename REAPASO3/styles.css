@@ -1,0 +1,38 @@
+body{
+    margin: 0;  /* Eliminalos margenes*/
+    padding: 0;  /* Elimina el espacio del relleno interno del cuerpo*/
+    box-sizing: border-box;  /* Establece el modelo de caja*/
+    font-family: sans-serif; /* Establece la fuente*/
+}
+
+.padre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hijo {
+    background: #4C35AA;
+    border-radius: 15px;
+    height: 200px;
+    width: 200px;
+}
+
+.hijo::before {
+    background: red;
+    content: "before";
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 15px;
+}
+
+.hijo::after {
+    background: yellow;
+    content: "after";
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 15px;
+}
